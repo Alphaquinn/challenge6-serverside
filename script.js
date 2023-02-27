@@ -7,9 +7,7 @@ document.querySelector("#search-form").addEventListener("submit", function(event
     var SAVEcity = []
     if(JSON.parse(localStorage.getItem('TERMsearch'))){
         SAVEcity= JSON.parse(localStorage.getItem(`TERMsearch`))
-    }
-
-    SAVEcity.push(TERMsearch);
+    }SAVEcity.push(TERMsearch);
     localStorage.setItem(`TERMsearch`, JSON.stringify(SAVEcity))
     ButtonDisplay()
 });
